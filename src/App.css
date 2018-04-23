@@ -1,0 +1,373 @@
+@font-face {
+  font-family: 'Krona One';
+  src: url(fonts/Krona_One/KronaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Russo One';
+  src: url(fonts/Russo_One/RussoOne-Regular.ttf);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: 'Krona One', sans-serif;
+}
+.App {
+  display: block;
+  text-align: center;
+  max-width: 500px;
+  min-width: 280px;
+  min-height: 490px;
+  border: 2px solid #333;
+  margin-left:auto;
+  margin-right:auto;
+  overflow-x:hidden;
+  background-color: white;
+}
+.App-header {
+  background-color: #222;
+  font-family: 'Russo One', sans-serif;
+  color: #FFC900;
+}
+.App-header a {
+  text-decoration: none;
+  color: white;
+}
+.App-header a:visited {
+  color: white;
+}
+.appTitle {
+  font-size: 1.8em;
+  letter-spacing: 3px;
+}
+.appBody {
+  position: relative;
+  height: 100%;
+  padding-top: 5px;
+  min-height: 450px;
+  background-image:
+    -webkit-gradient(linear, left bottom, left top, from(rgba(255,255,255,0.85)), to(rgba(255,255,255,0.85))),
+    url("img/MST3Kmoon-min.png");
+  background-image:
+    -webkit-linear-gradient(bottom, rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    url("img/MST3Kmoon-min.png");
+  background-image:
+    -o-linear-gradient(bottom, rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    url("img/MST3Kmoon-min.png");
+  background-image:
+    linear-gradient(to top, rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    url("img/MST3Kmoon-min.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+/*MAIN movie text*/
+.movieTitle {
+  margin: 8px auto;
+}
+.movieYear {
+  font-size: .5em;
+}
+.movieShorts {
+  font-size: .8em;
+}
+.movieAirDate {
+  font-size: .8em;
+}
+.movieEpisodeId {
+  font-size: .85em;
+  position: absolute;
+  bottom: 50px;
+  left: 20%;
+  right: 20%;
+}
+.movieLinks {
+  position: absolute;
+  bottom: 100px;
+  left: 1%;
+  right: 1%;
+}
+.movieLinks button {
+  font-size: .9em;
+  color: #444;
+  min-width: 46%;
+  height: 54px;
+  line-height: 50px;
+  border: none;
+  display: inline-block;
+  margin: 3px;
+}
+.youtubeLink {
+  background:
+    -webkit-gradient(
+      linear,
+      left top, right top,
+      color-stop(8%, #e52d27),
+      color-stop(9%, #7f8387)
+      );
+  background:
+    -webkit-linear-gradient(
+      left,
+      #e52d27 8%,
+      #7f8387 9%
+      );
+  background:
+    -o-linear-gradient(
+      left,
+      #e52d27 8%,
+      #7f8387 9%
+      );
+  background:
+    linear-gradient(
+      to right,
+      #e52d27 8%,
+      #7f8387 9%
+      );
+}
+.youtubeLink:hover {
+  background:
+    -webkit-gradient(
+      linear,
+      left top, right top,
+      color-stop(8%, #e52d27),
+      color-stop(9%, #6ea8f4)
+      );
+  background:
+    -webkit-linear-gradient(
+      left,
+      #e52d27 8%,
+      #6ea8f4 9%
+      );
+  background:
+    -o-linear-gradient(
+      left,
+      #e52d27 8%,
+      #6ea8f4 9%
+      );
+  background:
+    linear-gradient(
+      to right,
+      #e52d27 8%,
+      #6ea8f4 9%
+      );
+}
+.imdbLink {
+  background:
+    -webkit-gradient(
+      linear,
+      left top, right top,
+      color-stop(8%, #FFC900),
+      color-stop(9%, #7f8387)
+      );
+  background:
+    -webkit-linear-gradient(
+      left,
+      #FFC900 8%,
+      #7f8387 9%
+      );
+  background:
+    -o-linear-gradient(
+      left,
+      #FFC900 8%,
+      #7f8387 9%
+      );
+  background:
+    linear-gradient(
+      to right,
+      #FFC900 8%,
+      #7f8387 9%
+      );
+    -webkit-transition: all 1.2s ease 1s;
+    -o-transition: all 1.2s ease 1s;
+    transition: all 1.2s ease 1s;
+}
+.imdbLink:hover {
+  background:
+    -webkit-gradient(
+      linear,
+      left top, right top,
+      color-stop(8%, #FFC900),
+      color-stop(9%, #6ea8f4)
+      );
+  background:
+    -webkit-linear-gradient(
+      left,
+      #FFC900 8%,
+      #6ea8f4 9%
+      );
+  background:
+    -o-linear-gradient(
+      left,
+      #FFC900 8%,
+      #6ea8f4 9%
+      );
+  background:
+    linear-gradient(
+      to right,
+      #FFC900 8%,
+      #6ea8f4 9%
+      );
+   -webkit-transition: all 1.2s ease 1s;
+   -o-transition: all 1.2s ease 1s;
+   transition: all 1.2s ease 1s;
+}
+
+/*HEADER*/
+.headerBlock {
+  line-height: 10px;
+  display: inline-block;
+  background: #7f8387;
+  height: 40px;
+}
+.headerBlock:hover {
+  background-color: #6ea8f4;
+}
+.headerEpGuide {
+  width: 50%;
+  text-align: left;
+}
+.headerEpGuide p {
+  padding-left: 0.7em;
+}
+.headerSearch {
+  width: 25%;
+}
+.headerAboutUs {
+  width: 25%;
+}
+.activeNavLink div {
+  background: #3084F0;
+  height: 40px;
+}
+
+/*MAIN jump to season buttons*/
+.jumpToSeasonButtons {
+  border-bottom: 5px solid #333;
+}
+.fadedViewTitles {
+  font-size: .7em;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  opacity: 0.4;
+}
+.jumpToSeasonButtons button {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.highlightCurrentSeason {
+  background-color: #3084F0;
+}
+
+/*MAIN episode buttons*/
+.episodeSelectButtons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 44px;
+  width: 100%;
+}
+.episodeSelectButtons button {
+  border: none;
+  text-decoration: none;
+  background-color: #7f8387;
+  outline: none;
+  color: white;
+  font-size: 1em;
+  padding: 12px 12px;
+  cursor: pointer;
+}
+button {
+  font-family: 'Russo One', sans-serif;
+  display: inline-block;
+  background-color: #7f8387;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+button:hover {
+  background-color: #6ea8f4;
+}
+button:active {
+  background-color: #3084F0;
+}
+
+/*ABOUT*/
+.aboutBody {
+  height: 450px;
+  padding-top: 5px;
+  position: relative;
+}
+.aboutText {
+  font-size: 0.8em;
+}
+.aboutFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 320px;
+  background-image:
+    -webkit-gradient(linear, left bottom, left top, from(rgba(255,255,255,0.1)), to(rgba(255,255,255,0.9))),
+    url("img/MST3Koverlay-min.png");
+  background-image:
+    -webkit-linear-gradient(bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.9)),
+    url("img/MST3Koverlay-min.png");
+  background-image:
+    -o-linear-gradient(bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.9)),
+    url("img/MST3Koverlay-min.png");
+  background-image:
+    linear-gradient(to top, rgba(255,255,255,0.1), rgba(255,255,255,0.9)),
+    url("img/MST3Koverlay-min.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*SEARCH*/
+.searchBox {
+  height: 450px;
+  width: 100%;
+  padding-top: 5px;
+  overflow: auto;
+}
+.searchInput {
+  margin-top: 5px;
+  width: 50%;
+  height: 20px;
+  border: 1px solid #333;
+}
+.searchInput:focus {
+    background-color: #f2f3f3;
+}
+.searchResults{
+  margin: 8px;
+  padding-bottom: 1px;
+  font-size: .8em;
+  background: #eff0f0;
+}
+.searchLinks {
+  text-decoration: none;
+  color: #333;
+}
+.searchLinks:hover {
+  color: #6ea8f4;
+}
+
+/*mobile browser fixes*/
+:focus {outline: none;}
+::-moz-focus-inner {border: 0;}
+* { border-radius: 0; -webkit-border-radius: 0;}
